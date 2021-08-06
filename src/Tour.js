@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 
-function Tour({ id, image,info, name, price,deleteTour }) {
+function Tour({ _id, image,info, name, price,deleteTour }) {
     const [readMore,setReadMore] = useState(false)
     return (
         <div className="tour-parent">
@@ -18,7 +18,7 @@ function Tour({ id, image,info, name, price,deleteTour }) {
                     </button>
                 </p>
             </div>
-            <button className="delete-btn" onClick={()=>deleteTour(id)}>Delete Tour</button>
+            <button className="delete-btn" onClick={()=>deleteTour(_id)}>Delete Tour</button>
             </article>
             </div>
     )

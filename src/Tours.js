@@ -10,7 +10,7 @@ function Tours({tours,deleteTour}) {
         </div>
             <div>
                 {tours.map((tour) => {
-                    return <Tour key={tour.id} {...tour} deleteTour={deleteTour} />
+                    return <Tour key={tour._id} {...tour} deleteTour={deleteTour} />
                 })}
         </div>
         </section>
