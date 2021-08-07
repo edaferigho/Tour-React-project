@@ -2,7 +2,7 @@ import './App.css';
 import Loading from './Loading'
 import { useState, useEffect } from 'react'
 import Tours from './Tours'
-const url = 'https://course-api.com/react-tours-project'
+const url = '/tours'
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [tours, setTours] = useState([])
